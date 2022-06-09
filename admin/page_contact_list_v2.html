@@ -1,0 +1,2967 @@
+<!doctype html>
+<!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+
+<!-- Mirrored from altair_html.tzdthemes.com/page_contact_list_v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 May 2019 11:53:52 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Remove Tap Highlight on Windows Phone IE -->
+    <meta name="msapplication-tap-highlight" content="no"/>
+
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+
+    <title>Altair Admin v2.21.0</title>
+
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
+
+    <!-- flag icons -->
+    <link rel="stylesheet" href="assets/icons/flags/flags.min.css" media="all">
+
+    <!-- style switcher -->
+    <link rel="stylesheet" href="assets/css/style_switcher.min.css" media="all">
+    
+    <!-- altair admin -->
+    <link rel="stylesheet" href="assets/css/main.min.css" media="all">
+
+    <!-- themes -->
+    <link rel="stylesheet" href="assets/css/themes/themes_combined.min.css" media="all">
+
+    <!-- matchMedia polyfill for testing media queries in JS -->
+    <!--[if lte IE 9]>
+        <script type="text/javascript" src="bower_components/matchMedia/matchMedia.js"></script>
+        <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
+        <link rel="stylesheet" href="assets/css/ie.css" media="all">
+    <![endif]-->
+
+</head>
+<body class="disable_transitions sidebar_main_open sidebar_main_swipe">
+    <!-- main header -->
+    <header id="header_main">
+        <div class="header_main_content">
+            <nav class="uk-navbar">
+                                
+                <!-- main sidebar switch -->
+                <a href="#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
+                    <span class="sSwitchIcon"></span>
+                </a>
+                
+                <!-- secondary sidebar switch -->
+                <a href="#" id="sidebar_secondary_toggle" class="sSwitch sSwitch_right sidebar_secondary_check">
+                    <span class="sSwitchIcon"></span>
+                </a>
+                
+                    <div id="menu_top_dropdown" class="uk-float-left uk-hidden-small">
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                            <a href="#" class="top_menu_toggle"><i class="material-icons md-24">&#xE8F0;</i></a>
+                            <div class="uk-dropdown uk-dropdown-width-3">
+                                <div class="uk-grid uk-dropdown-grid">
+                                    <div class="uk-width-2-3">
+                                        <div class="uk-grid uk-grid-width-medium-1-3 uk-margin-bottom uk-text-center">
+                                            <a href="page_mailbox.html" class="uk-margin-top">
+                                                <i class="material-icons md-36 md-color-light-green-600">&#xE158;</i>
+                                                <span class="uk-text-muted uk-display-block">Mailbox</span>
+                                            </a>
+                                            <a href="page_invoices.html" class="uk-margin-top">
+                                                <i class="material-icons md-36 md-color-purple-600">&#xE53E;</i>
+                                                <span class="uk-text-muted uk-display-block">Invoices</span>
+                                            </a>
+                                            <a href="page_chat.html" class="uk-margin-top">
+                                                <i class="material-icons md-36 md-color-cyan-600">&#xE0B9;</i>
+                                                <span class="uk-text-muted uk-display-block">Chat</span>
+                                            </a>
+                                            <a href="page_scrum_board.html" class="uk-margin-top">
+                                                <i class="material-icons md-36 md-color-red-600">&#xE85C;</i>
+                                                <span class="uk-text-muted uk-display-block">Scrum Board</span>
+                                            </a>
+                                            <a href="page_snippets.html" class="uk-margin-top">
+                                                <i class="material-icons md-36 md-color-blue-600">&#xE86F;</i>
+                                                <span class="uk-text-muted uk-display-block">Snippets</span>
+                                            </a>
+                                            <a href="page_user_profile.html" class="uk-margin-top">
+                                                <i class="material-icons md-36 md-color-orange-600">&#xE87C;</i>
+                                                <span class="uk-text-muted uk-display-block">User profile</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">
+                                        <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                            <li class="uk-nav-header">Components</li>
+                                            <li><a href="components_accordion.html">Accordions</a></li>
+                                            <li><a href="components_buttons.html">Buttons</a></li>
+                                            <li><a href="components_notifications.html">Notifications</a></li>
+                                            <li><a href="components_sortable.html">Sortable</a></li>
+                                            <li><a href="components_tabs.html">Tabs</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="uk-navbar-flip">
+                    <ul class="uk-navbar-nav user_actions">
+                        <li><a href="#" id="full_screen_toggle" class="user_action_icon uk-visible-large"><i class="material-icons md-24 md-light">fullscreen</i></a></li>
+                        <li><a href="#" id="main_search_btn" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE8B6;</i></a></li>
+                        <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
+                            <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7F4;</i><span class="uk-badge">16</span></a>
+                            <div class="uk-dropdown uk-dropdown-xlarge">
+                                <div class="md-card-content">
+                                    <ul class="uk-tab uk-tab-grid" data-uk-tab="{connect:'#header_alerts',animation:'slide-horizontal'}">
+                                        <li class="uk-width-1-2 uk-active"><a href="#" class="js-uk-prevent uk-text-small">Messages (12)</a></li>
+                                        <li class="uk-width-1-2"><a href="#" class="js-uk-prevent uk-text-small">Alerts (4)</a></li>
+                                    </ul>
+                                    <ul id="header_alerts" class="uk-switcher uk-margin">
+                                        <li>
+                                            <ul class="md-list md-list-addon">
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <span class="md-user-letters md-bg-cyan">cd</span>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="page_mailbox.html">Eum dolores.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">Voluptates nostrum et quam omnis hic.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt=""/>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="page_mailbox.html">Error animi.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">Architecto neque exercitationem quia suscipit cum quia.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <span class="md-user-letters md-bg-light-green">at</span>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="page_mailbox.html">Tenetur qui architecto.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">Ut ab expedita et non corrupti tempora enim consequuntur voluptatem.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="page_mailbox.html">Doloremque quis atque.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">Aut doloremque quia nesciunt aliquid non ipsa sed.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_09_tn.png" alt=""/>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="page_mailbox.html">Est modi.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">Asperiores vel et cupiditate quod totam ab temporibus expedita.</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="uk-text-center uk-margin-top uk-margin-small-bottom">
+                                                <a href="page_mailbox.html" class="md-btn md-btn-flat md-btn-flat-primary js-uk-prevent">Show All</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul class="md-list md-list-addon">
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons uk-text-warning">&#xE8B2;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Et ea.</span>
+                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Pariatur qui labore magni qui iste quibusdam sint.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons uk-text-success">&#xE88F;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Minima dolorem.</span>
+                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">At fugit corporis ab corrupti.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons uk-text-danger">&#xE001;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Quasi est.</span>
+                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Expedita voluptas ut maxime perspiciatis.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons uk-text-primary">&#xE8FD;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Eaque doloribus culpa.</span>
+                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Voluptates eos optio dolore deleniti qui atque facilis.</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
+                            <a href="#" class="user_action_image"><img class="md-user-image" src="assets/img/avatars/avatar_11_tn.png" alt=""/></a>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="uk-nav js-uk-prevent">
+                                    <li><a href="page_user_profile.html">My profile</a></li>
+                                    <li><a href="page_settings.html">Settings</a></li>
+                                    <li><a href="login.html">Login Page</a></li>
+                                    <li><a href="login_v2.html">Login Page v2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header_main_search_form">
+            <i class="md-icon header_main_search_close material-icons">&#xE5CD;</i>
+            <form class="uk-form uk-autocomplete" data-uk-autocomplete="{source:'data/search_data.json'}">
+                <input type="text" class="header_main_search_input" />
+                <button class="header_main_search_btn uk-button-link"><i class="md-icon material-icons">&#xE8B6;</i></button>
+                <script type="text/autocomplete">
+                    <ul class="uk-nav uk-nav-autocomplete uk-autocomplete-results">
+                        {{~items}}
+                        <li data-value="{{ $item.value }}">
+                            <a href="{{ $item.url }}" class="needsclick">
+                                {{ $item.value }}<br>
+                                <span class="uk-text-muted uk-text-small">{{{ $item.text }}}</span>
+                            </a>
+                        </li>
+                        {{/items}}
+                        <li data-value="autocomplete-value">
+                            <a class="needsclick">
+                                Autocomplete Text<br>
+                                <span class="uk-text-muted uk-text-small">Helper text</span>
+                            </a>
+                        </li>
+                    </ul>
+                </script>
+            </form>
+        </div>
+    </header><!-- main header end -->
+    <!-- main sidebar -->
+    <aside id="sidebar_main">
+        
+        <div class="sidebar_main_header">
+            <div class="sidebar_logo">
+                <a href="index.html" class="sSidebar_hide sidebar_logo_large">
+                    <img class="logo_regular" src="assets/img/logo_main.png" alt="" height="15" width="71"/>
+                    <img class="logo_light" src="assets/img/logo_main_white.png" alt="" height="15" width="71"/>
+                </a>
+                <a href="index.html" class="sSidebar_show sidebar_logo_small">
+                    <img class="logo_regular" src="assets/img/logo_main_small.png" alt="" height="32" width="32"/>
+                    <img class="logo_light" src="assets/img/logo_main_small_light.png" alt="" height="32" width="32"/>
+                </a>
+            </div>
+            <div class="sidebar_actions">
+                <select id="lang_switcher" name="lang_switcher">
+                    <option value="gb" selected>English</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="menu_section">
+            <ul>
+                <li title="Dashboard">
+                    <a href="index.html">
+                        <span class="menu_icon"><i class="material-icons">&#xE871;</i></span>
+                        <span class="menu_title">Dashboard</span>
+                    </a>
+                    
+                </li>
+                <li title="Mailbox">
+                    <a href="page_mailbox.html">
+                        <span class="menu_icon"><i class="material-icons">&#xE158;</i></span>
+                        <span class="menu_title">Mailbox</span>
+                    </a>
+                    
+                </li>
+                <li title="Invoices">
+                    <a href="page_invoices.html">
+                        <span class="menu_icon"><i class="material-icons">&#xE53E;</i></span>
+                        <span class="menu_title">Invoices</span>
+                    </a>
+                    
+                </li>
+                <li title="Chats">
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE0B9;</i></span>
+                        <span class="menu_title">Chats</span>
+                    </a>
+                    <ul>
+                        <li><a href="page_chat.html">Regular Chat</a></li>
+                        <li><a href="page_chat_small.html">Chatboxes</a></li>
+                    </ul>
+                
+                </li>
+                <li title="Scrum Board">
+                    <a href="page_scrum_board.html">
+                        <span class="menu_icon"><i class="material-icons">&#xE85C;</i></span>
+                        <span class="menu_title">Scrum Board</span>
+                    </a>
+                    
+                </li>
+                <li title="Snippets">
+                    <a href="page_snippets.html">
+                        <span class="menu_icon"><i class="material-icons">&#xE86F;</i></span>
+                        <span class="menu_title">Snippets</span>
+                    </a>
+                    
+                </li>
+                <li title="User Profile">
+                    <a href="page_user_profile.html">
+                        <span class="menu_icon"><i class="material-icons">&#xE87C;</i></span>
+                        <span class="menu_title">User Profile</span>
+                    </a>
+                    
+                </li>
+                <li title="Sticky Notes">
+                    <a href="page_sticky_notes.html">
+                        <span class="menu_icon"><i class="material-icons">&#xE8F0;</i></span>
+                        <span class="menu_title">Sticky Notes</span>
+                    </a>
+                    
+                </li>
+                <li title="Forms">
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE8D2;</i></span>
+                        <span class="menu_title">Forms</span>
+                    </a>
+                    <ul>
+                        <li><a href="forms_regular.html">Regular Elements</a></li>
+                        <li><a href="forms_advanced.html"><span class="submenu-icon"><i class="material-icons md-color-red-600">&#xE031;</i></span>Advanced Elements</a></li>
+                        <li><a href="forms_dynamic.html">Dynamic</a></li>
+                        <li><a href="forms_file_input.html">File Upload (dropify)</a></li>
+                        <li><a href="forms_file_upload.html">File Upload (uikit)</a></li>
+                        <li><a href="forms_validation.html">Validation</a></li>
+                        <li><a href="forms_wizard.html">Wizard</a></li>
+                        <li class="menu_subtitle">WYSIWYG Editors</li>
+                                <li><a href="forms_wysiwyg_ckeditor.html">CKeditor</a></li>
+                        <li><a href="forms_wysiwyg_inline.html">Ckeditor Inline</a></li>
+                        <li><a href="forms_wysiwyg_tinymce.html">TinyMCE</a></li>
+                            </ul>
+                
+                </li>
+                <li title="Layout">
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE8F1;</i></span>
+                        <span class="menu_title">Layout</span>
+                    </a>
+                    <ul>
+                        <li><a href="layout_top_menu.html">Top Menu</a></li>
+                        <li><a href="layout_header_full.html">Full Header</a></li>
+                    </ul>
+                
+                </li>
+                <li title="Kendo UI Widgets">
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE1BD;</i></span>
+                        <span class="menu_title">Kendo UI Widgets</span>
+                    </a>
+                    <ul>
+                        <li><a href="kendoui_autocomplete.html">Autocomplete</a></li>
+                        <li><a href="kendoui_calendar.html">Calendar</a></li>
+                        <li><a href="kendoui_colorpicker.html">ColorPicker</a></li>
+                        <li><a href="kendoui_combobox.html">ComboBox</a></li>
+                        <li><a href="kendoui_datepicker.html">DatePicker</a></li>
+                        <li><a href="kendoui_datetimepicker.html">DateTimePicker</a></li>
+                        <li><a href="kendoui_dropdown_list.html">DropDownList</a></li>
+                        <li><a href="kendoui_masked_input.html">Masked Input</a></li>
+                        <li><a href="kendoui_menu.html">Menu</a></li>
+                        <li><a href="kendoui_multiselect.html">MultiSelect</a></li>
+                        <li><a href="kendoui_numeric_textbox.html">Numeric TextBox</a></li>
+                        <li><a href="kendoui_panelbar.html">PanelBar</a></li>
+                        <li><a href="kendoui_timepicker.html">TimePicker</a></li>
+                        <li><a href="kendoui_toolbar.html">Toolbar</a></li>
+                        <li><a href="kendoui_window.html">Window</a></li>
+                    </ul>
+                
+                </li>
+                <li title="Components">
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE87B;</i></span>
+                        <span class="menu_title">Components</span>
+                    </a>
+                    <ul>
+                        <li><a href="components_accordion.html">Accordions</a></li>
+                        <li><a href="components_animations.html">MD Animations</a></li>
+                        <li><a href="components_autocomplete.html">Autocomplete</a></li>
+                        <li><a href="components_breadcrumbs.html">Breadcrumbs</a></li>
+                        <li><a href="components_buttons.html">Buttons</a></li>
+                        <li><a href="components_fab.html">Buttons: FAB</a></li>
+                        <li><a href="components_cards.html">Cards</a></li>
+                        <li><a href="components_colors.html">Colors</a></li>
+                        <li><a href="components_common.html">Common</a></li>
+                        <li><a href="components_dropdowns.html">Dropdowns</a></li>
+                        <li><a href="components_dynamic_grid.html">Dynamic Grid</a></li>
+                        <li><a href="components_footer.html">Footer</a></li>
+                        <li><a href="components_grid.html">Grid</a></li>
+                        <li><a href="components_icons.html">Icons</a></li>
+                        <li><a href="components_modal.html">Lightbox/Modal</a></li>
+                        <li><a href="components_list_grid_view.html">List/Grid View</a></li>
+                        <li><a href="components_lists.html">Lists</a></li>
+                        <li><a href="components_nestable.html">Nestable</a></li>
+                        <li><a href="components_notifications.html">Notifications</a></li>
+                        <li><a href="components_panels.html">Panels</a></li>
+                        <li><a href="components_preloaders.html">Preloaders</a></li>
+                        <li><a href="components_scroll_top.html">Scroll to Top</a></li>
+                        <li><a href="components_slider.html">Slider</a></li>
+                        <li><a href="components_slideshow.html">Slideshow</a></li>
+                        <li><a href="components_sortable.html">Sortable</a></li>
+                        <li><a href="components_switcher.html">Switcher</a></li>
+                        <li><a href="components_tables.html">Tables</a></li>
+                        <li><a href="components_tables_examples.html">Tables Examples</a></li>
+                        <li><a href="components_tabs.html">Tabs</a></li>
+                        <li><a href="components_timeline.html">Timeline</a></li>
+                        <li><a href="components_tooltips.html">Tooltips</a></li>
+                        <li><a href="components_typography.html">Typography</a></li>
+                    </ul>
+                
+                </li>
+                <li title="E-commerce">
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE8CB;</i></span>
+                        <span class="menu_title">E-commerce</span>
+                    </a>
+                    <ul>
+                        <li><a href="ecommerce_product_details.html">Product Details</a></li>
+                        <li><a href="ecommerce_product_edit.html">Product Edit</a></li>
+                        <li><a href="ecommerce_products_grid.html">Products Grid</a></li>
+                        <li><a href="ecommerce_products_list.html">Products List</a></li>
+                        <li><a href="ecommerce_payment.html">Payment Page</a></li>
+                    </ul>
+                
+                </li>
+                <li title="Plugins">
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE8C0;</i></span>
+                        <span class="menu_title">Plugins</span>
+                    </a>
+                    <ul>
+                        <li><a href="plugins_calendar.html">Calendar</a></li>
+                        <li><a href="plugins_charts.html">Charts</a></li>
+                        <li><a href="plugins_charts_echarts.html">Charts (echarts)</a></li>
+                        <li><a href="plugins_code_editor.html">Code Editor</a></li>
+                        <li><a href="plugins_context_menu.html">Context Menu</a></li>
+                        <li><a href="plugins_crud_table.html">CRUD Table</a></li>
+                        <li><a href="plugins_datatables.html">Datatables</a></li>
+                        <li><a href="plugins_diff.html">Diff View</a></li>
+                        <li><a href="plugins_dropzone.html">Dropzone</a></li>
+                        <li><a href="plugins_filemanager.html">File Manager</a></li>
+                        <li><a href="plugins_gantt_chart.html">Gantt Chart</a></li>
+                        <li><a href="plugins_google_maps.html">Google Maps</a></li>
+                        <li><a href="plugins_image_cropper.html">Image Cropper</a></li>
+                        <li><a href="plugins_idle_timeout.html">Idle Timeout</a></li>
+                        <li><a href="plugins_push_notifications.html">Push Notifications</a></li>
+                        <li><a href="plugins_tour.html">Tour</a></li>
+                        <li><a href="plugins_tablesorter.html">Tablesorter</a></li>
+                        <li><a href="plugins_tree.html">Tree</a></li>
+                        <li><a href="plugins_vector_maps.html">Vector Maps</a></li>
+                        <li><a href="plugins_xeditable.html">X-editable</a></li>
+                    </ul>
+                
+                </li>
+                <li title="Pages">
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE24D;</i></span>
+                        <span class="menu_title">Pages</span>
+                    </a>
+                    <ul>
+                        <li><a href="page_blank.html">Blank</a></li>
+                        <li><a href="page_contact_list.html">Contact List</a></li>
+                        <li><a href="page_contact_list_horizontal.html"><span class="submenu-icon"><i class="material-icons md-color-red-600">&#xE031;</i></span>Contact List Horizontal</a></li>
+                        <li class="act_item"><a href="page_contact_list_v2.html">Contact List V2</a></li>
+                        <li><a href="page_forum.html">Forum</a></li>
+                        <li><a href="page_forum_single.html">Forum (single thread)</a></li>
+                        <li><a href="page_gallery.html">Gallery</a></li>
+                        <li><a href="page_gallery_v2.html">Gallery v2</a></li>
+                        <li><a href="page_help.html">Help/Faq</a></li>
+                        <li><a href="login.html">Login Page</a></li>
+                        <li><a href="login_v2.html">Login Page v2</a></li>
+                        <li><a href="page_mailbox_v2.html">Mailbox V2</a></li>
+                        <li><a href="page_notes.html">Notes</a></li>
+                        <li><a href="page_pricing_tables.html">Pricing Tables</a></li>
+                        <li><a href="page_pricing_tables_v2.html">Pricing Tables v2</a></li>
+                        <li><a href="page_search_results.html">Search Results</a></li>
+                        <li><a href="page_settings.html">Settings</a></li>
+                        <li><a href="page_todo.html">Todo</a></li>
+                        <li><a href="page_user_edit.html">User edit</a></li>
+                        <li><a href="page_quiz.html">Quiz</a></li>
+                        <li class="menu_subtitle">Issue Tracker</li>
+                                <li><a href="page_issues_list.html">List View</a></li>
+                        <li><a href="page_issue_details.html">Issue Details</a></li>
+                                <li class="menu_subtitle">Blog</li>
+                                <li><a href="page_blog_list.html">Blog List</a></li>
+                        <li><a href="page_blog_article.html">Blog Article</a></li>
+                                <li class="menu_subtitle">Errors</li>
+                                <li><a href="error_404.html">Error 404</a></li>
+                        <li><a href="error_500.html">Error 500</a></li>
+                            </ul>
+                
+                </li>
+                                <li>
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE241;</i></span>
+                        <span class="menu_title">Multi level</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">First level</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Second Level</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Third level</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third level</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third level</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Long title to test</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Third level</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third level</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third level</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Even longer title multi line</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside><!-- main sidebar end -->
+
+    <div id="page_content">
+        <div id="page_content_inner">
+
+            <div class="uk-grid uk-grid-width-large-1-2 uk-grid-width-xlarge-1-3 uk-grid-medium listNavWrapper" id="contact_list_v2" data-uk-grid-match="{target:'.md-card'}">
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_12.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Beth                                    <span class="listNavSelector">Collins</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Quidem corrupti doloremque non et voluptate sequi et sed odio ab eaque repudiandae.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="9cfdf6fdfff3feefdcf4f5f0f0efb2fef5e6">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(501)762-0255x89980</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_04.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Wilfrid                                    <span class="listNavSelector">Koelpin</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Repellendus quae odio iusto qui dolor ut fuga.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="6809040d1009060d505e280a0d1a0f0d460b0705">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(974)386-7338x04856</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_03.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Kristian                                    <span class="listNavSelector">Pfeffer</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Et praesentium voluptas ut quis beatae aperiam incidunt autem tenetur.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="acc0d9c9c0c0cd82c0cdc7c5c2ecc7c0c3cfc7c3c1d9c9c0c0c9de82cfc3c1">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(683)925-0610x6342</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_01.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Vella                                    <span class="listNavSelector">Kuphal</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Est dicta eum est molestias culpa aut harum vero consequatur officia rerum rerum aut ut.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="d7b1bbb2b6b9b9b8b997aeb6bfb8b8f9b4b8ba">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">1-107-257-9127</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_01.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Emmitt                                    <span class="listNavSelector">Treutel</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Nostrum ipsum nihil voluptate id nulla sunt omnis.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="d0b1a5b6b4b5a2b8b1a2febbb1b9bca9be90b8bfa4bdb1b9bcfeb3bfbd">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">+34(7)1821650302</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_08.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Adan                                    <span class="listNavSelector">Leuschke</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Soluta fugiat excepturi dicta eaque maiores est distinctio earum.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="f39a9e929d9acac0b39b96819e929d919a9d80dd9c8194">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(636)673-8837x2002</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_03.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Juston                                    <span class="listNavSelector">Legros</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Porro necessitatibus aliquam dolorem et optio autem eius qui voluptas porro non.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="cca0adafb5e2a1afa8a9bea1a3b8b88caaa9a9a2a9b5e2afa3a1">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">1-533-792-3088x18564</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_10.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Dillan                                    <span class="listNavSelector">Jaskolski</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Esse dolores aut quo enim aut incidunt nobis fuga.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="ef9c8d8a8a9daf88869c838e9c8081c1818a9b">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">160-534-2056x029</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_08.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Davin                                    <span class="listNavSelector">Gutkowski</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Sit aliquam culpa inventore sint consequatur porro sit dignissimos dolore.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="c6afaba7b4b7b3a7b4a2b286aea9b2aba7afaae8a5a9ab">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">392-454-5201</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_09.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Lillie                                    <span class="listNavSelector">Kovacek</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Eos cum nobis aut consequatur ea aut dolorum voluptate.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="97f3fce4fffbf2e5fef9d7e4f4fffefafaf2fbb9f4f8fa">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">171.249.5282x999</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_07.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Bryon                                    <span class="listNavSelector">Senger</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Autem et blanditiis eius exercitationem occaecati sed velit voluptatibus quaerat quibusdam itaque.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="5d2d3c292f343e343c7331383a2f322e1d2e3e35343333382f2e3e35303831382f733e3230">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(483)892-1519x297</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_10.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Patsy                                    <span class="listNavSelector">Upton</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Quia eaque beatae molestias sunt odio et ab quia ea itaque expedita maxime.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="92e0f3e6f9f7bcfff3eafbfffbfefbf3fcd2fafde6fff3fbfebcf1fdff">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">+74(7)5846453779</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_03.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Santina                                    <span class="listNavSelector">Glover</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Dicta nihil nisi nisi illum ut non quidem.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="096e60667f6867676027626560676e497c65657b606a612760676f66">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">293.125.5932x4095</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_02.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Alexander                                    <span class="listNavSelector">Nader</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Quas aliquid et voluptates id voluptate eum consequatur.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="8bffe2fffef8bab2cbece6eae2e7a5e8e4e6">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(316)104-4374x280</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_01.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Kathleen                                    <span class="listNavSelector">Kerluke</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Facere error officia beatae ipsum impedit voluptatibus.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="cca6a3bfb9a9e2a7a0a5a2ab8cbcaaada2a2a9bebfb8a5a0a0a8a9a2a9bfa5a7e2a3beab">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">03978164314</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_04.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    America                                    <span class="listNavSelector">O'Reilly</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Sint atque ut et sequi dolores velit rerum quos ea aut magnam.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="98faeaf9e1f9f6b6fbf7eaf3fdeae1d8f3f7ebebf3eafdf1fffdeab6fbf7f5">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(498)047-1936x49389</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_04.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Krystel                                    <span class="listNavSelector">Feeney</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Facilis sint dolores recusandae consequatur est cupiditate consequuntur enim et.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="a5cec0c8c8c0d78bc9d0c0c9c9c4e5c0c8c8c0d7ccc6cd8bc6cac8">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(646)705-8205x8230</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_07.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Moises                                    <span class="listNavSelector">Skiles</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Quo sed sequi nobis qui ad consequatur velit eveniet ex veritatis.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="177a76636372782422577062637a7679793974787a">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(797)145-8375x5489</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_12.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Nico                                    <span class="listNavSelector">Schimmel</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Sed porro excepturi culpa neque facilis consectetur.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="64030f010106080116240309050d084a070b09">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">885.519.1896</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_08.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Deborah                                    <span class="listNavSelector">Schumm</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Exercitationem similique esse consequatur iusto aliquam dicta aut voluptatem.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="62100a0b030c0c0d0c535722050f030b0e4c010d0f">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">196.148.1907</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_10.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Tyler                                    <span class="listNavSelector">Wyman</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Quisquam vel deserunt aliquam asperiores corrupti quod.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="096561687c6a62497068616666276a6664">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">013.737.1415x56058</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_02.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Gavin                                    <span class="listNavSelector">Bahringer</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Facilis qui error aperiam quas laudantium est quasi voluptatem numquam aspernatur necessitatibus enim illo.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="f598948181909adb9980909c99829c818fb5999c81819990db969a98">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">181.701.6554x422</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_05.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Alysson                                    <span class="listNavSelector">Schiller</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Corporis expedita accusamus quod alias aut harum aut saepe molestias qui illo et ut.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="c9aaa1bba0babdaca5a5ace7baaaa1a4a0adbd89a1a6bda4a8a0a5e7aaa6a4">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">619-489-1994x312</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_09.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Isobel                                    <span class="listNavSelector">Lemke</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Ea quia a ipsa dolor provident culpa perferendis eveniet quasi suscipit possimus vel sint.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="6809040d100946090a0d1a06091c001128031d0a460b0705">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(377)623-5214x4744</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_11.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Kiel                                    <span class="listNavSelector">Willms</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Aut rerum velit qui aperiam officiis hic fugiat aut reiciendis est dolore eos consequatur.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="cfa2aebda3aaaae1adaaaea7aea18fa7a0bba2aea6a3e1aca0a2">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(602)553-2477</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_08.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Era                                    <span class="listNavSelector">Smith</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Voluptatibus magnam laboriosam laboriosam dolorem neque est omnis sapiente.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="2c4b5e4949424443405802484d424b4940436c484d5a455f024e4556">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">+11(7)5255374467</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_09.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Adriel                                    <span class="listNavSelector">Mertz</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Dignissimos nemo recusandae et distinctio fugiat placeat omnis aut quidem minima ratione alias.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="8deaecffe8f9f9bdbacdfef9ffe2e0ece3efe2eae4fee4eee5a3eee2e0">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">533-820-9700x94332</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_04.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Ocie                                    <span class="listNavSelector">Gusikowski</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Voluptatem amet sed rem nihil voluptas quis similique dolore.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">hand.<a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="691f08050c1b000c29040a0a1c0505061c0e010a1b0606021a470a0604">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">05600362948</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_05.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Name                                    <span class="listNavSelector">Stanton</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Ab tempora sint dolorem enim dignissimos blanditiis perferendis cumque ut.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="3a515f48564f515f145848535e5d5f4e4e5f7a5c485b545f5951531453545c55">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">302.752.0823x63916</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_12.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Abraham                                    <span class="listNavSelector">Lowe</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Dolor commodi quia et architecto sint corrupti perspiciatis doloribus.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="7f1b161c1416110c101151151e11160c3f120a13131a0d511c1012">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(510)388-3802x364</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_03.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Hassan                                    <span class="listNavSelector">Parker</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Est beatae et porro at ducimus tempora qui ducimus in non iste fugiat.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="9df6f8f3f9eff4fef6b3fffce8fef5dde4fcf5f2f2b3fef2f0">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(813)268-6631x13334</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_03.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Cortney                                    <span class="listNavSelector">Schmitt</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Nobis autem sed consequuntur est non amet id aliquam at dicta.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="d7a4bebab8b9bea4f9b6bba3bfb2b697b0b8b8b3a0beb9bab2b3bfa2a5a4a3f9b4b8ba">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">655.400.1919</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_06.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Darren                                    <span class="listNavSelector">Treutel</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Veniam ut quia totam aut omnis rem.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="e780858692848fa7808a868e8bc984888a">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(834)132-6624</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_06.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Elyssa                                    <span class="listNavSelector">Considine</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Et iste harum voluptas ullam rem dolor inventore dolorem mollitia consectetur architecto ex similique.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="49233c27203c3a7c79093b262e28212767263b2e">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(027)938-7742</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_03.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Jordi                                    <span class="listNavSelector">Barrows</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Voluptatum nihil ex non nam facere adipisci doloribus nostrum cumque consequatur expedita.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="aecbdccfdac6eedddec1dccbdcc6cbc2c2cbdc80cdc1c3">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">1-786-430-2452</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_05.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Myrl                                    <span class="listNavSelector">Quitzon</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Optio unde incidunt omnis et ut ipsum reiciendis eos incidunt qui molestiae possimus.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="b7dbded9d3c4d2ce8e81f7d5d2d2c599d4d8da">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">590.599.9698</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_02.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Giovanni                                    <span class="listNavSelector">Abshire</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Repellendus aut ea voluptas quis dolorum ea dignissimos.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="3d544f585353584f7d5a5c4451524f59135e5250">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(076)837-2218</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_03.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Giovanny                                    <span class="listNavSelector">Lindgren</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Excepturi iste fugit officia cum sed dolores explicabo aliquid quis fugit commodi itaque.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="7a1f090e1f0c1b14484a3a1d0813171f09090e15160e1f14181f081d54181300">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">306.001.5776x8832</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_12.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Mathias                                    <span class="listNavSelector">Kunde</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Atque architecto neque cumque voluptas incidunt eaque eos commodi.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="a7d5c8cfc6c989cbc8ced4e7dec6cfc8c889c4c8ca">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(998)566-3423x22501</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_11.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Fabian                                    <span class="listNavSelector">Beier</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Quia magnam consequatur iste quod at reiciendis temporibus.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">o'<a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="03606c6d6d666f6f2d656f6c716a6d6643646e626a6f2d606c6e">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">03639849605</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_01.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Roxanne                                    <span class="listNavSelector">Bergstrom</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Molestiae maxime unde quibusdam voluptas delectus occaecati nisi ducimus assumenda.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="11727062787c78632328516563746465747d3f727e7c">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">771.449.8354x29062</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_12.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Alexandrine                                    <span class="listNavSelector">Padberg</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Fuga et excepturi maxime veritatis corporis hic non.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="0460656a6d61682a63766170676c616a446369656d682a676b69">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">519-910-9251</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_04.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Beatrice                                    <span class="listNavSelector">Quitzon</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Et cumque voluptates aut consequuntur sunt error sapiente et est iure qui.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="96fcf9f7f8f8fff3b8f4f7e3f5fed6eff7fef9f9b8f5f9fb">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">965-989-2295</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_03.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Fiona                                    <span class="listNavSelector">Fay</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Quo corrupti earum quo ut omnis commodi dolorem laborum.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="1a7273766a7f686e3474757f76737b5a72756e777b737634797577">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">1-041-974-1910</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_12.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Jerald                                    <span class="listNavSelector">Balistreri</span>
+                                    <span class="uk-text-truncate">Schamberger PLC </span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Occaecati in voluptatem et perferendis quod quia repellat ut id.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="8ffce6ffeafca1eae3e2e6fdeecfe4e3e0ece4e0a1ece0e2">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">450.639.7762x1417</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_01.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Briana                                    <span class="listNavSelector">Hammes</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Odio et voluptas magnam ex et assumenda ullam culpa voluptate.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="6201030f1b0e0e074c00100d150c22010a100b11160b030c11070c4c010d0f">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">1-683-077-8864x465</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_01.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Karley                                    <span class="listNavSelector">Daniel</span>
+                                    <span class="uk-text-truncate">Goodwin-Nienow</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Delectus numquam maiores nam veritatis nisi consectetur.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="b2d8d9c7d0f2cbd3dadddd9cd1dddf">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">(677)825-8429</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="uk-margin-medium-top">
+                        <div class="md-card md-card-hover md-card-horizontal">
+                            <div class="md-card-head">
+                                <div class="md-card-head-menu" data-uk-dropdown="{pos:'bottom-left'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <img class="md-card-head-avatar" src="assets/img/avatars/avatar_11.png" alt=""/>
+                                </div>
+                                <h3 class="md-card-head-text uk-text-center">
+                                    Mattie                                    <span class="listNavSelector">Thiel</span>
+                                    <span class="uk-text-truncate">Strosin Groupa</span>
+                                </h3>
+                            </div>
+                            <div class="md-card-content">
+                                <ul class="md-list">
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Info</span>
+                                            <span class="uk-text-small uk-text-muted">Minima dignissimos dolorum dicta rerum quo aliquid molestias dolorem voluptas autem.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Email</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="355850594c5b541b595c5b51755d5a4158545c591b565a58">[email&#160;protected]</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Phone</span>
+                                            <span class="uk-text-small uk-text-muted">1-629-406-9116</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+
+        </div>
+    </div>
+
+    <!-- google web fonts -->
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        WebFontConfig = {
+            google: {
+                families: [
+                    'Source+Code+Pro:400,700:latin',
+                    'Roboto:400,300,500,700,400italic:latin'
+                ]
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!-- common functions -->
+    <script src="assets/js/common.min.js"></script>
+    <!-- uikit functions -->
+    <script src="assets/js/uikit_custom.min.js"></script>
+    <!-- altair common functions/helpers -->
+    <script src="assets/js/altair_admin_common.min.js"></script>
+
+    <!-- page specific plugins -->
+    <!-- listNav  -->
+    <script src="bower_components/jquery-listnav/jquery-listnav.min.js"></script>
+
+    <!--  contact list v2 functions -->
+    <script src="assets/js/pages/page_contact_list_v2.min.js"></script>
+    
+    <script>
+        $(function() {
+            if(isHighDensity()) {
+                $.getScript( "assets/js/custom/dense.min.js", function(data) {
+                    // enable hires images
+                    altair_helpers.retina_images();
+                });
+            }
+            if(Modernizr.touch) {
+                // fastClick (touch devices)
+                FastClick.attach(document.body);
+            }
+        });
+        $window.load(function() {
+            // ie fixes
+            altair_helpers.ie_fix();
+        });
+    </script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-65191727-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <div id="style_switcher">
+        <div id="style_switcher_toggle"><i class="material-icons">&#xE8B8;</i></div>
+        <div class="uk-margin-medium-bottom">
+            <h4 class="heading_c uk-margin-bottom">Colors</h4>
+            <ul class="switcher_app_themes" id="theme_switcher">
+                <li class="app_style_default active_theme" data-app-theme="">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_a" data-app-theme="app_theme_a">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_b" data-app-theme="app_theme_b">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_c" data-app-theme="app_theme_c">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_d" data-app-theme="app_theme_d">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_e" data-app-theme="app_theme_e">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_f" data-app-theme="app_theme_f">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_g" data-app-theme="app_theme_g">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_h" data-app-theme="app_theme_h">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_i" data-app-theme="app_theme_i">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+                <li class="switcher_theme_dark" data-app-theme="app_theme_dark">
+                    <span class="app_color_main"></span>
+                    <span class="app_color_accent"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-visible-large uk-margin-medium-bottom">
+            <h4 class="heading_c">Sidebar</h4>
+            <p>
+                <input type="checkbox" name="style_sidebar_mini" id="style_sidebar_mini" data-md-icheck />
+                <label for="style_sidebar_mini" class="inline-label">Mini Sidebar</label>
+            </p>
+            <p>
+                <input type="checkbox" name="style_sidebar_slim" id="style_sidebar_slim" data-md-icheck />
+                <label for="style_sidebar_slim" class="inline-label">Slim Sidebar</label>
+            </p>
+        </div>
+        <div class="uk-visible-large uk-margin-medium-bottom">
+            <h4 class="heading_c">Layout</h4>
+            <p>
+                <input type="checkbox" name="style_layout_boxed" id="style_layout_boxed" data-md-icheck />
+                <label for="style_layout_boxed" class="inline-label">Boxed layout</label>
+            </p>
+        </div>
+        <div class="uk-visible-large">
+            <h4 class="heading_c">Main menu accordion</h4>
+            <p>
+                <input type="checkbox" name="accordion_mode_main_menu" id="accordion_mode_main_menu" data-md-icheck />
+                <label for="accordion_mode_main_menu" class="inline-label">Accordion mode</label>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            var $switcher = $('#style_switcher'),
+                $switcher_toggle = $('#style_switcher_toggle'),
+                $theme_switcher = $('#theme_switcher'),
+                $mini_sidebar_toggle = $('#style_sidebar_mini'),
+                $slim_sidebar_toggle = $('#style_sidebar_slim'),
+                $boxed_layout_toggle = $('#style_layout_boxed'),
+                $accordion_mode_toggle = $('#accordion_mode_main_menu'),
+                $html = $('html'),
+                $body = $('body');
+
+
+            $switcher_toggle.click(function(e) {
+                e.preventDefault();
+                $switcher.toggleClass('switcher_active');
+            });
+
+            $theme_switcher.children('li').click(function(e) {
+                e.preventDefault();
+                var $this = $(this),
+                    this_theme = $this.attr('data-app-theme');
+
+                $theme_switcher.children('li').removeClass('active_theme');
+                $(this).addClass('active_theme');
+                $html
+                    .removeClass('app_theme_a app_theme_b app_theme_c app_theme_d app_theme_e app_theme_f app_theme_g app_theme_h app_theme_i app_theme_dark')
+                    .addClass(this_theme);
+
+                if(this_theme == '') {
+                    localStorage.removeItem('altair_theme');
+                    $('#kendoCSS').attr('href','bower_components/kendo-ui/styles/kendo.material.min.css');
+                } else {
+                    localStorage.setItem("altair_theme", this_theme);
+                    if(this_theme == 'app_theme_dark') {
+                        $('#kendoCSS').attr('href','bower_components/kendo-ui/styles/kendo.materialblack.min.css')
+                    } else {
+                        $('#kendoCSS').attr('href','bower_components/kendo-ui/styles/kendo.material.min.css');
+                    }
+                }
+
+            });
+
+            // hide style switcher
+            $document.on('click keyup', function(e) {
+                if( $switcher.hasClass('switcher_active') ) {
+                    if (
+                        ( !$(e.target).closest($switcher).length )
+                        || ( e.keyCode == 27 )
+                    ) {
+                        $switcher.removeClass('switcher_active');
+                    }
+                }
+            });
+
+            // get theme from local storage
+            if(localStorage.getItem("altair_theme") !== null) {
+                $theme_switcher.children('li[data-app-theme='+localStorage.getItem("altair_theme")+']').click();
+            }
+
+
+        // toggle mini sidebar
+
+            // change input's state to checked if mini sidebar is active
+            if((localStorage.getItem("altair_sidebar_mini") !== null && localStorage.getItem("altair_sidebar_mini") == '1') || $body.hasClass('sidebar_mini')) {
+                $mini_sidebar_toggle.iCheck('check');
+            }
+
+            $mini_sidebar_toggle
+                .on('ifChecked', function(event){
+                    $switcher.removeClass('switcher_active');
+                    localStorage.setItem("altair_sidebar_mini", '1');
+                    localStorage.removeItem('altair_sidebar_slim');
+                    location.reload(true);
+                })
+                .on('ifUnchecked', function(event){
+                    $switcher.removeClass('switcher_active');
+                    localStorage.removeItem('altair_sidebar_mini');
+                    location.reload(true);
+                });
+
+        // toggle slim sidebar
+
+            // change input's state to checked if mini sidebar is active
+            if((localStorage.getItem("altair_sidebar_slim") !== null && localStorage.getItem("altair_sidebar_slim") == '1') || $body.hasClass('sidebar_slim')) {
+                $slim_sidebar_toggle.iCheck('check');
+            }
+
+            $slim_sidebar_toggle
+                .on('ifChecked', function(event){
+                    $switcher.removeClass('switcher_active');
+                    localStorage.setItem("altair_sidebar_slim", '1');
+                    localStorage.removeItem('altair_sidebar_mini');
+                    location.reload(true);
+                })
+                .on('ifUnchecked', function(event){
+                    $switcher.removeClass('switcher_active');
+                    localStorage.removeItem('altair_sidebar_slim');
+                    location.reload(true);
+                });
+
+        // toggle boxed layout
+
+            if((localStorage.getItem("altair_layout") !== null && localStorage.getItem("altair_layout") == 'boxed') || $body.hasClass('boxed_layout')) {
+                $boxed_layout_toggle.iCheck('check');
+                $body.addClass('boxed_layout');
+                $(window).resize();
+            }
+
+            $boxed_layout_toggle
+                .on('ifChecked', function(event){
+                    $switcher.removeClass('switcher_active');
+                    localStorage.setItem("altair_layout", 'boxed');
+                    location.reload(true);
+                })
+                .on('ifUnchecked', function(event){
+                    $switcher.removeClass('switcher_active');
+                    localStorage.removeItem('altair_layout');
+                    location.reload(true);
+                });
+
+        // main menu accordion mode
+            if($sidebar_main.hasClass('accordion_mode')) {
+                $accordion_mode_toggle.iCheck('check');
+            }
+
+            $accordion_mode_toggle
+                .on('ifChecked', function(){
+                    $sidebar_main.addClass('accordion_mode');
+                })
+                .on('ifUnchecked', function(){
+                    $sidebar_main.removeClass('accordion_mode');
+                });
+
+
+        });
+    </script>
+</body>
+
+<!-- Mirrored from altair_html.tzdthemes.com/page_contact_list_v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 May 2019 11:53:53 GMT -->
+</html>
